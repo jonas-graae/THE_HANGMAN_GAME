@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boilerplate App</title>
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <h1>Boilerplate</h1>
-    <script src="/scripts/webpack.js"></script>
+    <h1>The Hangman Game!</h1>
+    <div class="container">
+        <ul id="puzzle"></ul>
+        <div class="info">
+            <p id="guesses" class="warning"></p>
+            <button id="reset" class="warning">Reset</button>
+        </div>
+    </div>
+    
+    <script src="scripts/bundle.js"></script>
 </body>
 </html>
